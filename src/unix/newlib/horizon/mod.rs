@@ -35,6 +35,7 @@ s! {
         pub sin_family: ::sa_family_t,
         pub sin_port: ::in_port_t,
         pub sin_addr: ::in_addr,
+        pub sin_zero: [::c_char; 8],
     }
 
     pub struct sockaddr_in6 {
